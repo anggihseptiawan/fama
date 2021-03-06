@@ -26,16 +26,16 @@ export default function Header({ data, text, lowerSectionRef }: HeaderProps) {
           </Animated.FromDirection>
           <Animated.FromDirection from="right" custom={1} delay={0.3} duration={0.8}>
             <Animated.Reveal from="right" className="rounded-3xl" delay={0.8} duration={1.2}>
-              <Avatar src={profilePicture} alt="Profile Picture" />
+              <Avatar src="https://avatars.githubusercontent.com/u/46193391?s=460&u=5eee5412541a7eaa26f341ece1f8294c81f30633&v=4" alt="Profile Picture" />
             </Animated.Reveal>
           </Animated.FromDirection>
         </div>
         <HeaderText className="flex flex-col items-center mt-6 md:items-start md:row-start-2 md:col-start-2 md:self-center md:mt-0">
-          <Animated.Letter text={`${greetings} 👋`} custom={0} delay={0.3} />
-          <Animated.Letter text={`${intro} ${name}`} custom={2} delay={0.3} />
+          <Animated.Letter text={`Hi There.. 👋`} custom={0} delay={0.3} />
+          <Animated.Letter text={`Anggih Septiawan here..`} custom={2} delay={0.3} />
           <div className="relative inline-flex">
             <Animated.Letter
-              text={`${preTitle ? `${preTitle} ` : ''}${job}`}
+              text={`I'm a Frontend Engineer`}
               custom={4}
               delay={0.3}
             />
